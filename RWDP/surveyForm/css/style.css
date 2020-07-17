@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  background-color: #3b6978;
+  color: #e4e3e3;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.clue {
+  font-size: 0.8rem;
+}
+
+#form-head {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#form-head #title {
+  font-size: 2rem;
+}
+
+#form-head #description {
+  font-size: 1.3rem;
+}
+
+#survey-form .container {
+  background-color: #84a9ac;
+  max-width: 600px;
+  padding: 1.8rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#survey-form .form-group {
+  margin-bottom: 1rem;
+}
+
+#survey-form .form-group label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+#survey-form .form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#survey-form .form-group #dropdown {
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  color: #666666;
+}
+
+.recommendation {
+  margin-bottom: 10px;
+}
+
+.recommendation p {
+  font-size: 1.3rem;
+}
+
+.recommendation div {
+  font-size: 1.3rem;
+}
+
+.technology p {
+  font-size: 1.3rem;
+}
+
+.technology label {
+  margin-left: 5px;
+}
+
+.technology div {
+  margin-bottom: 5px;
+}
+
+.feedback textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.5rem 0.5rem;
+}
+
+#submit {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #204051;
+  cursor: pointer;
+}
