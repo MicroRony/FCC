@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5E5E5;
+  color: #1D1D1D;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #747474;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#main-header {
+  background-color: #4F635F;
+  color: #E5FFFA;
+  margin: 40px 0;
+}
+
+#main-header .header-content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#main-header .header-content h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#main-header .header-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  transform: translate(130%, -30%);
+}
+
+#subject .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#subject #tribute-info p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#subject #tribute-info blockquote {
+  font-weight: 100;
+  text-align: right;
+}
+
+#subject #img-div img {
+  display: block;
+  margin: auto 0;
+  margin-bottom: 5px;
+}
+
+#subject #img-div #img-caption {
+  font-size: 1rem;
+}
+
+#time-line .time-line-caption {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+#time-line .paragraph {
+  margin: 4.5rem 0;
+}
+
+#time-line .paragraph h2 {
+  margin-bottom: 10px;
+}
+
+#time-line .paragraph hr {
+  margin-bottom: 20px;
+  border-top: 0.1px solid #000;
+}
+
+#time-line .paragraph .sub-paragraph {
+  margin-top: 0.5rem;
+}
+
+#time-line .paragraph .sub-paragraph h3 {
+  margin-bottom: 0.3rem;
+}
+
+#main-footer {
+  height: 80px;
+}
+
+#main-footer .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.quote {
+  display: block;
+  transform: translateX(-60px);
+}
+
+@media only screen and (max-width: 600px) {
+  #main-header .header-content h1 {
+    font-size: 4rem;
+  }
+  #main-header .header-content h3 {
+    font-size: 1.5rem;
+    transform: translate(148%, -30%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #subject .container {
+    grid-template-columns: 1fr;
+  }
+}

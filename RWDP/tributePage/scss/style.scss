@@ -1,0 +1,94 @@
+@import 'config';
+@import 'style';
+
+#main-header {
+  background-color: $header-color;
+  color: $headerText-color;
+  margin: 40px 0;
+}
+
+#main-header .header-content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#main-header .header-content h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#main-header .header-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  transform: translate(130%, -30%);
+}
+
+#subject .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#subject #tribute-info p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#subject #tribute-info blockquote {
+  font-weight: 100;
+  text-align: right;
+}
+
+#subject #img-div img {
+  display: block;
+  margin: auto 0;
+  margin-bottom: 5px;
+}
+
+#subject #img-div #img-caption {
+  font-size: 1rem;
+}
+
+#time-line .time-line-caption {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+#time-line .paragraph {
+  margin: 4.5rem 0;
+}
+
+#time-line .paragraph h2 {
+  margin-bottom: 10px;
+}
+
+#time-line .paragraph hr {
+  margin-bottom: 20px;
+  border-top: 0.1px solid #000;
+}
+
+#time-line .paragraph .sub-paragraph {
+  margin-top: 0.5rem;
+}
+
+#time-line .paragraph .sub-paragraph h3 {
+  margin-bottom: 0.3rem;
+}
+
+#main-footer {
+  height: 80px; 
+}
+
+#main-footer .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@import 'utilities';
+@import 'responsive';

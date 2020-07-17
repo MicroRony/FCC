@@ -1,0 +1,15 @@
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.quote {
+  display: block;
+  transform: translateX(-60px);
+}
