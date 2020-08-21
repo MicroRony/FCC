@@ -1,0 +1,25 @@
+//color variables
+$primary-color: #1d3557;
+$secondary-color: #447a9c;
+$active-color: #e63946;
+$light-color: #f4f4f4;
+$dark-color: #333;
+// $light-color: #a8dadc;
+// $light-color: #f4f4f4;
+
+// fucntion for set text color base on background color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
+// mixin for use the function
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
