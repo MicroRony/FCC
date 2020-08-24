@@ -167,3 +167,14 @@ var myPlants = [
 
 var secondTree = myPlants[1].list[1]; // Change this line
 )
+
+function updateRecords(id, prop, value) {
+  if (collection[id].hasOwnProperty(prop)) {
+    return;
+      } else {
+        collection[id][prop] = value;
+      }
+  return collection;
+}
+
+console.log(updateRecords(1245, "album", "Riptide"));
