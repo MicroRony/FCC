@@ -33,16 +33,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
+  padding: 0 3rem;
 }
 
-nav li {
+nav .menu li {
   display: inline-block;
-  margin-right: 1.3rem;
+  margin-left: 1.3rem;
   font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav .menu li a:hover {
+  color: #e63946;
 }
 
 #showcase {
@@ -114,6 +120,7 @@ nav li {
   flex-direction: column;
   align-items: center;
   background-color: #e63946;
+  color: #f4f4f4;
   padding: 1.5rem;
   position: relative;
 }
@@ -122,11 +129,12 @@ nav li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
+  height: 350px;
 }
 
 .product-sale .products .container .product-img {
   background-color: #e63946;
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +146,7 @@ nav li {
 }
 
 .product-sale .products .container .product-info {
-  height: 300px;
+  height: 100px;
 }
 
 .product-sale .products .container .product-info h2 {
@@ -166,7 +174,7 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .testimonials-container .testimonials .testimonial-content {
@@ -243,8 +251,8 @@ nav li {
 
 .contact .container .details .icon {
   margin: 1.5rem 0;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: #f4f4f4;
   display: flex;
@@ -255,6 +263,7 @@ nav li {
 
 .contact .container .details .details-info {
   margin-left: 1rem;
+  color: #fff;
 }
 
 .contact form {
@@ -356,7 +365,7 @@ footer .copyright {
 
 .bg-active {
   background-color: #e63946;
-  color: #333;
+  color: #f4f4f4;
 }
 
 .bg-light {
@@ -691,7 +700,7 @@ footer .copyright {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.3;
 }
 

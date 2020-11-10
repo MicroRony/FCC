@@ -10,17 +10,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
+  padding: 0 3rem;
 
-  li {
-    display: inline-block;
-    margin-right: 1.3rem;
-    font-weight: 600;
-    // z-index: 2;
+  .menu{
+
+    li {
+      display: inline-block;
+      margin-left: 1.3rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      // z-index: 2;
+
+      a:hover {
+        color: $active-color;
+      }
+    }
   }
+
 }
 
 #showcase {
@@ -99,7 +109,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $active-color;
+    @include set-background($active-color);
     padding: 1.5rem;
     position: relative;
   }
@@ -110,10 +120,11 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
+    height: 350px;
 
     .product-img {
       background-color: $active-color;
-      height: 300px;
+      height: 350px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -125,7 +136,7 @@ nav {
     }
 
     .product-info {
-      height: 300px;
+      height: 100px;
 
       h2 {
         display: inline;
@@ -153,7 +164,7 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 3rem;
+      padding: 2rem;
 
       &-content {
         background-color: red;
@@ -227,8 +238,8 @@ nav {
       }
       .icon {
         margin: 1.5rem 0;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background-color: $light-color;
         display: flex;
@@ -239,6 +250,7 @@ nav {
 
       .details-info {
         margin-left: 1rem;
+        color: #fff;
       }
     }
   }
