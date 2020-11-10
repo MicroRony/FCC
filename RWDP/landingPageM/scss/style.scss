@@ -37,15 +37,14 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 
-#showcase {
   .showcase-content p {
     margin-bottom: 1.5rem;
   }
-}
 
-#showcase {
   .showcase-img {
     transform: scale(1.5);
   }
@@ -167,14 +166,14 @@ nav {
       padding: 2rem;
 
       &-content {
-        background-color: red;
+        background-color: #fff;
         width: 100%;
         height: 220px;
         padding: 2rem;
       }
 
       .main {
-        background-color: green;
+        @include set-background($active-color);
       }
 
       .avatar {
@@ -200,18 +199,7 @@ nav {
   width: 100%;
   height: 900px;
   position: relative;
-  background: url('/img/overlay.jpg') no-repeat center center/cover;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
+  background-color: $secondary-color;
 
   .container {
     display: grid;
@@ -241,7 +229,7 @@ nav {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: $light-color;
+        color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -284,14 +272,10 @@ nav {
 }
 
 footer {
-  @include set-background($secondary-color);
-
   .links {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    // justify-content: center;
     align-items: flex-start;
-    // text-align: center;
     gap: 2rem;
 
     .social-links {
@@ -304,12 +288,8 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-          // text-align: center;
-          width: 70px;
-          height: 70px;
-          @include set-background($dark-color);
           border-radius: 50%;
-          margin-right: 1rem;
+          margin-right: 2rem;
         }
       }
     }
@@ -318,8 +298,9 @@ footer {
       padding: 2rem 0;
 
       li {
-        text-align: center;
-        line-height: 1.7;
+        text-align: left;
+        line-height: 2;
+        font-size: 1.4rem;
 
         &:first-child {
           font-size: 1.5rem;

@@ -1,0 +1,34 @@
+// Tablet and Up
+@media (max-width: 768px) {
+  #showcase {
+    grid-template-columns: 1fr;
+    height: auto;
+
+    .showcase-content {
+      text-align: center;
+
+      > h1 {
+        font-size: 3rem;
+      }
+
+      > p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .showcase-img {
+      display: none;
+    }
+  }
+
+  .uses {
+    .container {
+      grid-template-columns: 1fr;
+      
+
+      .uses-img {
+        display: none;
+      }
+    }
+  }
+}
